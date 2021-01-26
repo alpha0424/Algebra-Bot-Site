@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="js/snow.js" asynchronous></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LBDPYHWJHB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LBDPYHWJHB');
+    </script>
+    <link
+            href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"
+            rel="stylesheet"
+            type="text/css"
+            media="print"
+            onload="this.media='all'"
+    />
+    <meta name="keywords" content="Algebra,Algebra Bot, multipurpose, discord bot, bot, logging, fun" />
+    <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#00c8ff"><meta property=og:type content=website><meta property=og:url content=https://pb.Algebra.xyz><meta property=og:title content="Algebra - The Discord Bot"><meta property=og:description content="Easy to use, multi-purpose Discord Bot."><meta property=og:image content=https://pb.Algebra.xyz/assets/NormalFlickz_cropped.png>
+    <link rel="icon"
+          type="image/png"
+          href="img/1611043699570.png">
+    <title>Algebra</title>
+    <style>
+    /* width */
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #1D1E28;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #ff9900;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #ff9900;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        z-index: 99;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        padding: 7.5px;
+        border-radius: 2px;
+    }
+
+    #myBtn:hover {
+        background-color: #ffd900;
+    }
+    </style>
+      <!--<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_EToaY0reQTSqFi1CarVoh2FSQtGj7oyGqy3jOb216VAlZo4yT1nggk1pUU_n62n" charset="UTF-8"></script></head> -->
+<body>
+<div id="snow"></div>
+                                                                                                                                                                                                                                      <nav class="navbar navbar-expand-lg bg-transparent">
+                                                                                                                                                                                                                                                                                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <img src="img/1611043699570.png" width="20px" height="20px" style="max-width: none !important;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </button>
+    <a href="/"> <img src="img/1611043699570.png" width="50" height="50"> </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/"><button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;"><em class="fad fa-house"></em> Home</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html"><button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;"><em class="fad fa-users-cog"></em> Team</button></a>
+            </li>
+        </ul>
+        <div class="nav-item">
+            <a class="nav-link" target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=789537247178915840&permissions=8&scope=bot"><button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;"><em class="fad fa-address-card"></em> Invite</button></a>
+        </div>
+        <!--<div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://discord.com/api/oauth2/authorize?client_id=789537247178915840&permissions=8&scope=bot" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;"><em class="fad fa-plus-square"></em> Invite</button>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=789537247178915840&permissions=8&scope=bot">Admin Permissions</a>
+                <a class="dropdown-item" target="_blank" href="https://discord.com/oauth2/authorize?client_id=789537247178915840&permissions=268889206&scope=bot">Non-Admin Permissions</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/server-settings">Server settings</a> 
+            </div>-->
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="commands.html"><button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;"><em class="fad fa-address-card"></em> Docs/Commands</button></a>
+        </div>
+        <!-- <a href="dashboardredirect.html"><button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;">DASHBAORD</button></a>
+    </div> -->
+    </div>
+                                                                                                                                                                                                                                      </nav>
+<center>
+    <div class="heading">
+        <div class="levitate-body">
+            <div class="levitate">
+                <div class="logo">
+                    <i class="h"><img src="img/algebra.jpg" draggable="false" ></i>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <!--<div class="typewriter">
+            <h1> It's time to use Algebra in your server.</h1> -->
+            <h1>Algebra Bot
+                <!-- <span
+                        class="txt-rotate"
+                        data-period="2000"
+                        data-rotate='[ "Website is nearly complete..." ]'></span> -->
+            </h1>
+        <p class="subtitle">Algebra Bot is an <b>innovative</b> and <b>exciting</b> new bot which entails a variety of state-of-the-art commands,
+          <br>  coded in a way which allows users to freely interact and enjoy spending time with the bot and its community.</p>
+        <a class="btn btn-secondary btn-lg jellyButton" rel="noopener noreferrer" href="https://discord.com/oauth2/authorize?client_id=789537247178915840&permissions=8&scope=bot" target="_blank" role="button"><em class="fab fa-discord" style="color: #ffae00"></em> Get started</a>
+        <a class="btn btn-secondary btn-lg jellyButton" href="https://discord.gg/NbvsrndBfc" target="_blank" role="button"><em class="fad fa-user-headset"></em> Support</a>
+        <a class="btn btn-secondary btn-lg jellyButton" href="404.html" role="button"><em class="fab fa-hand-o-up"></em> Vote</a>
+           <!--<br> <a href="https://top.gg/bot/">
+            <img src="https://top.gg/api/widget/servers/.svg?noavatar=true" alt="Algebra" />
+        </a>
+            <a href="https://top.gg/bot/">
+                <img src="https://top.gg/api/widget/status/.svg?noavatar=true" alt="Algebra" />
+            </a>
+            <br /><br /><br />-->
+    </div></div>
+
+
+
+
+
+
+
+</center>
+<div class="features">
+
+    <div class="title">Features of Bot</div>
+    <div class="subtitle">Algebra Bot has state-of-the-art Commands!</div>
+    <div class="cards">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Join/Leave Message</h5>
+                <p class="card-text">
+                    
+                    <img src="" draggable="false">
+                  </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Reaction Roles</h5>
+                <p class="card-text">
+                   
+                    <img src="" draggable="false">
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Auto Roles</h5>
+                <p class="card-text">
+                    
+                    <img src="" draggable="false">
+                </p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Suggestions System</h5>
+                <p class="card-text">
+                   
+                    <img src="" draggable="false">
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ticket System</h5>
+                <p class="card-text">
+                   
+                    <img src="" draggable="false">
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Verification System</h5>
+                <p class="card-text">
+                   
+                    <img src="" draggable="false">
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Moderation</h5>
+                <p class="card-text">
+                   
+                    <img src="" draggable="false">
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Info</h5>
+                <p class="card-text">
+                   
+                    <img src="" draggable="false">
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Music</h5>
+                <p class="card-text">
+                   
+                    <img src="" draggable="false">
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Invite Management</h5>
+                <p class="card-text">
+                   
+                    <img src="" draggable="false">
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Other</h5>
+                <p class="card-text">
+                   
+                    <img src="" draggable="false">
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<center>
+    <!--<div class="statistics">
+        <div class="cards">
+            <div class="card statistic" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">100+</p>
+                    <p style="font-weight: bold !important;font-size: 20px;"><em class="fad fa-server"></em>&nbsp;Servers</p>
+                </div>
+            </div>
+            <div class="card statistic" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">200,000+</p>
+                    <p style="font-weight: bold !important;font-size: 20px;"><em class="fad fa-user-visor"></em>&nbsp;Users</p>
+                </div>
+            </div>
+            <div class="card statistic" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">3,000+</p>
+                    <p style="font-weight: bold !important;font-size: 20px;"><em class="fad fa-hashtag"></em>&nbsp;Channels</p>
+                </div>
+            </div>
+            <div class="card statistic" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">10+</p>
+                    <p style="font-weight: bold !important;font-size: 20px;"><em class="fad fa-laptop-code"></em>&nbsp;Commands</p>
+                </div>
+            </div>
+          <br>  <a href="https://top.gg/bot/789537247178915840">
+                <img src="https://top.gg/api/widget/789537247178915840.svg" title="Visit Algebra listed on top.gg" alt="Algebra's top.gg Widget Failed to Load" />
+            </a>
+            <a href="https://botsfordiscord.com/bots/789537247178915840" >
+                <img src="https://botsfordiscord.com/api/bot/789537247178915840/widget?theme=dark" title="Visit Algebra listed on Bots for Discord!" alt="Algebra's Bots for Discord Widget Failed to Load" /></a>
+            <a href="https://discord.boats/bot/789537247178915840" >
+                <img src="https://discord.boats/api/widget/789537247178915840"  title="Visit Algebra listed on Discord Boats" alt="Algebra's Discord Boats Widget Failed to Load" /></a>
+                <a href="https://dbots.co/bots/789537247178915840">
+                    <img src="https://dbots.co/api/v1/bots/789537247178915840/widget?size=medium" title="Visit Algebra listed on Dbots.co" alt="Algebra's Dbots.co Widget Failed to Load" />
+                  </a>
+            <a href="https://botlist.site/789537247178915840">
+                <img src="https://infinitybotlist.com/bots/789537247178915840/widget?size=small" title="Visit Algebra listed on Infinity Bot List!" alt="Algebra's Infinity Bot List Widget Failed to Load" /></a>
+        </div>-->
+    <div class="page_end">
+        <div class="start">
+            <div class="card">
+                <div class="card-body gs-card">
+                    <div class="title">Ready to try Algebra?</div>
+                    <div class="subtitle">Invite Algebra Bot and start giving your members a better bot to use!</div>
+                    <br />
+                    <a class="btn btn-primary btn-lg jellyButton" href="https://discord.com/oauth2/authorize?client_id=789537247178915840&permissions=8&scope=bot" role="button"><em class="fab fa-discord" style="color: #000000"></em> Add to Server</a>
+                </div><br />
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="bot-footer">
+                <img src="img/alphagif.gif" draggable="false" width="50"><br />
+                Copyright © - <script>
+                document.write(new Date().getFullYear());
+            </script>
+            </div><br/>
+            <div class="Algebra">Regards, <a href="https://www.alphadiscord.ml" target="_blank">ALPHAᴰᴱⱽ</a></div>
+        </div>
+    </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4M12 16V9"/></svg><br>Back to top</button>
+            <script src="js/now-ui-kit.min.js"></script>
+            <script src="js/typewrite.js"></script>
+            <script>
+                //Get the button
+                var mybutton = document.getElementById("myBtn");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script>
+                document.addEventListener('contextmenu', event => event.preventDefault());
+                jQuery(document).ready(function () {
+                    function disableSelection(e) {
+                        if (typeof e.onselectstart != "undefined") e.onselectstart = function () {
+                            return false
+                        };
+                        else if (typeof e.style.MozUserSelect != "undefined") e.style.MozUserSelect = "none";
+                        else e.onmousedown = function () {
+                            return false
+                        };
+                        e.style.cursor = "default"
+                    }
+                    window.onload = function () {
+                        disableSelection(document.body)
+                    };
+
+                    window.addEventListener("keydown", function (e) {
+                        if (e.ctrlKey && (e.which == 65 || e.which == 66 || e.which == 67 || e.which == 70 || e.which == 73 || e.which == 80 || e.which == 83 || e.which == 85 || e.which == 86)) {
+                            e.preventDefault()
+                        }
+                    });
+                    document.keypress = function (e) {
+                        if (e.ctrlKey && (e.which == 65 || e.which == 66 || e.which == 70 || e.which == 67 || e.which == 73 || e.which == 80 || e.which == 83 || e.which == 85 || e.which == 86)) { }
+                        return false
+                    };
+
+                    document.onkeydown = function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 123 || e.keyCode == 18) {
+                            return false
+                        }
+                    };
+
+                    document.oncontextmenu = function (e) {
+                        var t = e || window.event;
+                        var n = t.target || t.srcElement;
+                        if (n.nodeName != "A") return false
+                    };
+                    document.ondragstart = function () {
+                        return false
+                    };
+                });
+            </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     </html>
+

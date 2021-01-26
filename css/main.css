@@ -1,0 +1,370 @@
+body {
+    font-family: "Poppins", sans-serif !important;
+    background-color: #1d1e28;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    border-top: 6px #ff9900 solid !important;
+    font-size: 16px;
+    width: 100%;
+    min-height: 100vh;
+  }
+  #container {
+    /* This will come into play later */
+    perspective: 20px;
+  }
+  
+  #inner {
+    width: 33em;
+    height: 28em;
+    background-image: url("../assets/AboutPagePicture1.png");
+  
+    transition: transform 0.5s;
+  }
+  
+  * {
+    color: #fff;
+    text-decoration: none;
+  }
+  h1,
+  h2 {
+    font-weight: 200;
+    margin: 0.4em 0;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    color: #888;
+    font-size: 2em;
+  }
+  .levitate-body:after {
+    /*content: '__________'; */
+    margin: 10px 0 0 0;
+    color: #a0c2ce;
+    -webkit-filter: blur(2px);
+  }
+  
+  .logo {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    background-color: #a0c2ce;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
+  }
+  .logo:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(-360deg);
+  }
+  
+  .levitate i {
+    color: #fff;
+    font: 700 50px Tahoma;
+    /*  text-shadow: 0px 0px #819da6, 1px 1px #819da6, 2px 2px #819da6, 3px 3px #819da6, 4px 4px #819da6, 5px 5px #819da6, 6px 6px #819da6, 7px 7px #819da6, 8px 8px #819da6, 9px 9px #819da6, 10px 10px #819da6, 11px 11px #819da6, 12px 12px #819da6, 13px 13px #819da6, 14px 14px #819da6, 15px 15px #819da6, 16px 16px #819da6, 17px 17px #819da6, 18px 18px #819da6, 19px 19px #819da6, 20px 20px #819da6, 21px 21px #819da6, 22px 22px #819da6, 23px 23px #819da6, 24px 24px #819da6, 25px 25px #819da6, 26px 26px #819da6, 27px 27px #819da6, 28px 28px #819da6; */
+  }
+  
+  .levitate {
+    -webkit-animation-name: levitate;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out ease-in-out;
+  }
+  
+  @-webkit-keyframes levitate {
+    from {
+      -webkit-transform: translate(0, 0px);
+    }
+    45% {
+      -webkit-transform: translate(0, 20px);
+    }
+    to {
+      -webkit-transform: translate(0, -0px);
+    }
+  }
+  
+  .nav-link {
+    font-size: 14px !important;
+    background: transparent !important;
+    font-family: Lato, sans-serif !important;
+    text-transform: capitalize !important;
+  }
+  .nav-link:hover {
+    background: transparent !important;
+    color: #ff9900 !important;
+    font-weight: bold !important;
+  }
+  
+  .login-btn {
+    border: 2px solid #ff9900 !important;
+    font-size: 10px !important;
+  }
+  .login-btn:hover {
+    background: #ff9900 !important;
+  }
+  .navbar {
+    box-shadow: none !important;
+  }
+  .pulse-white {
+    animation: pulse-white 2s infinite;
+  }
+  .pulse-black {
+    animation: pulse-black 2s infinite;
+  }
+  .pulse-purple {
+    animation: pulse-purple 2s infinite;
+  }
+  .pulse-skyblue {
+    animation: pulse-skyblue 2s infinite;
+  }
+  .pulse-rainbow {
+    animation: pulse-rainbow 2s infinite;
+  }
+  .jellyButton {
+    animation: jellyOff 1000ms linear both;
+  }
+  .jellyButton:hover,
+  .jellyButton:focus,
+  .jellyButton:active {
+    animation: jellyOn 1000ms linear both;
+  }
+  #snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1000;
+    /*background-image: url("../assets/NormalFlickz_cropped.png");*/
+  }
+  
+  .navbar-brand {
+    font-size: 25px !important;
+  }
+  
+  .navbar-toggler-icon {
+    color: #fff !important;
+  }
+  
+  .btn {
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+  }
+  
+  .btn-primary {
+    background-color: #ff9900 !important;
+  }
+  .btn-secondary {
+    background-color: #2c2f33 !important;
+  }
+  .heading {
+    padding: 160px 50px !important;
+    color: #fff !important;
+    /*background-image: url("../assets/wavelight.svg") !important; */
+    background-position: bottom !important;
+    background-size: 175% !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  b {
+    color: #ff9900;
+  }
+  
+  .headingabout {
+    padding: 160px 50px !important;
+    color: #fff !important;
+  }
+  
+  .title {
+    line-height: 90px !important;
+    margin-bottom: -2px !important;
+    font-size: 36px !important;
+  }
+  .typewriter h1 {
+    color: #fff;
+    font-family: Montserrat;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #ff9900; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #ff9900;
+    }
+  }
+  
+  .subtitle {
+    color: rgba(255, 255, 255, 0.685) !important;
+    font-size: 16px !important;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .features {
+    text-align: center !important;
+    /* background: #ff9900 !important;*/
+    padding: 60px 50px !important;
+    background-image: url("../assets/wave6.svg") !important;
+    background-position: bottom !important;
+    background-size: 182% !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  .features .title {
+    font-size: 40px !important;
+    color: #ffffff !important;
+    line-height: 70px !important;
+  }
+  
+  .features .subtitle {
+    font-size: 20px !important;
+    color: #ff9900;
+  }
+  
+  .features .card-body {
+    text-align: left !important;
+  }
+  
+  .features .card-title {
+    margin: 0 0 -3px !important;
+  }
+  .cards {
+    margin-top: 30px !important;
+  }
+  
+  .card {
+    border-radius: 5px !important;
+    box-shadow: none !important;
+  }
+  
+  .card-title {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    color: #ff9900 !important;
+  }
+  
+  .statistics {
+    text-align: center !important;
+    padding-top: 300px !important;
+  }
+  
+  .statistics .card-body {
+    padding: 0 !important;
+    height: 500 !important;
+    width: 332 !important;
+    max-height: 280 !important;
+    max-width: 332 !important;
+  }
+  
+  .statistics .title {
+    font-size: 40px !important;
+    color: #ffffff !important;
+    line-height: 70px !important;
+  }
+  
+  .statistics .subtitle {
+    font-size: 20px !important;
+    color: #a2a8bd;
+  }
+  
+  .card.statistic {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #ff9900 !important;
+  }
+  
+  .page_end {
+    background-image: url("../assets/wavelight.svg") !important;
+    background-position: bottom !important;
+    background-size: 150% !important;
+    background-repeat: no-repeat !important;
+  }
+  .start {
+    padding: 60px 50px !important;
+  }
+  
+  .start .card {
+    background: transparent !important;
+    color: #f6f9ff !important;
+  }
+  
+  .features .card {
+    background: #1d1e28;
+    border-radius: 22px !important;
+    border: 4px solid #ff9900;
+  }
+  .features .card-text {
+    color: rgba(255, 255, 255, 0.46) !important;
+  }
+  
+  .features .card-body {
+    padding: 40px 40px 40px 30px !important;
+  }
+  
+  .navbar-toggler-icon {
+    color: #fff !important;
+  }
+  .footer {
+    text-align: center !important;
+    padding: 5px 6px !important;
+    color: #ecf2ff;
+    padding: 30px 30px !important;
+  }
+  
+  .footer .anaxes {
+    font-family: "Montserrat" !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 5px !important;
+    letter-spacing: 0.15em !important;
+    font-variant: small-caps !important;
+  }
+  
+  .footer .anaxes a {
+    color: #ff9900 !important;
+    text-decoration: none !important;
+  }
+  
+  .footer .bot-footer {
+    text-align: center !important;
+    color: #a2a8bd !important;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge add Firefox */
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+  }
+  
